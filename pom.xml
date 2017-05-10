@@ -109,26 +109,6 @@
 			<build>
 				<plugins>
 					<plugin>
-						<groupId>com.google.code.maven-replacer-plugin</groupId>
-						<artifactId>replacer</artifactId>
-						<executions>
-							<execution>
-								<id>remove-repo-samples</id>
-								<goals>
-									<goal>replace</goal>
-								</goals>
-								<configuration>
-									<includes>
-										<include>${basedir}/spring-boot-dependencies/pom.xml</include>
-									</includes>
-									<regexFlags>
-										<regexFlag>DOTALL</regexFlag>
-									</regexFlags>
-									<token>\n\t&lt;profiles&gt;.*&lt;/profiles&gt;</token>
-									<value />
-								</configuration>
-							</execution>
-						</executions>
 					</plugin>
 				</plugins>
 			</build>
